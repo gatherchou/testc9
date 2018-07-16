@@ -1,4 +1,7 @@
-FROM alpine:3.5
+FROM php:fpm-alpine
+
+RUN echo "https://mirrors.aliyun.com/alpine/v3.7/main" > /etc/apk/repositories && echo "https://mirrors.aliyun.com/alpine/v3.7/community" >> /etc/apk/repositories \
+ && apk update
 
 # ------------------------------------------------------------------------------
 # Install base and Node
