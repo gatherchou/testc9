@@ -1,4 +1,4 @@
-FROM php:fpm-alpine
+FROM alpine:3.8
 
 # ------------------------------------------------------------------------------
 # Install base and Node
